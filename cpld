@@ -7,6 +7,7 @@
 # to destination directory (param2). Can be useful when you are trying to execute
 # a Linux binary file under FreeBSD using Linux compatibility mode.
 
+# Add on to support extra filecopy logic using python
 # Example:
 # Find and collect the dependencies of "code" into ~/unix directory.
 # ./cpld ~/Downloads/VSCode-linux-x64/code ~/unix/
@@ -38,8 +39,8 @@ echo "Copying the dependencies to $2"
 for dep in $deps
 do
     echo "Copying $dep to $2"
-    #cp "$dep" $2
-    rsync -Rv "$dep" "$2"
+    python3 ~/Projects/scripts_linux/cpmd.py $dep $2
+    
 done
 
 echo "Done!"
