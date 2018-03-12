@@ -1,9 +1,5 @@
 # Author: Chris Miklos
 # 
-# What do I do?:
-# Copy file with full path to destination folder retaining the path-to-sourcefile structure
-# within the destination folder. 
-#
 # What can I be useful for?:
 # FreeBSD in Linux compatibility mode is capable to run Linux applications given the 
 # dependency libraries are copied from a matching architecture running a Linux.
